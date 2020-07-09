@@ -42,8 +42,7 @@ const EditUser = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <MaskedInput
-                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-                            name='phone'
+                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, '-', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]} name='phone'
                             onChange={e => onInput(e)}
                             value={phone}
                             className="form-control "
@@ -51,8 +50,7 @@ const EditUser = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <MaskedInput
-                            mask={['(', /[0-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-                            name='homePhone'
+                            mask={['(', /[0-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, '-', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]} name='homePhone'
                             onChange={e => onInput(e)}
                             value={homePhone}
                             className="form-control "
@@ -60,8 +58,7 @@ const EditUser = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <MaskedInput
-                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
-                            name='workPhone'
+                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, '-', /\d/, /\d/, /\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]} name='workPhone'
                             onChange={e => onInput(e)}
                             value={workPhone}
                             className="form-control "

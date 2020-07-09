@@ -35,7 +35,7 @@ const AddUser = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <MaskedInput
-                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/,'-', /\d/,/\d/,/\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]}
                             name='phone'
                             onChange={e => onInput(e)}
                             value={phone}
@@ -45,7 +45,7 @@ const AddUser = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <MaskedInput
-                            mask={['(', /[0-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+                            mask={['(', /[0-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/,'-', /\d/,/\d/,/\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]}
                             name='homePhone'
                             onChange={e => onInput(e)}
                             value={homePhone}
@@ -54,7 +54,7 @@ const AddUser = () => {
                     </div>
                     <div className="col-12 mb-5">
                         <MaskedInput
-                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+                            mask={['(', /[1-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/,'-', /\d/,/\d/,/\d/, '-', /\d/, /\d/, '-', /\d/, /\d/]}
                             name='workPhone'
                             onChange={e => onInput(e)}
                             value={workPhone}
