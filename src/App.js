@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from './companents/layout/Navbar'
+import Home from './companents/page/Home'
+import NotFound from './companents/page/NotFound'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import AddUser from './companents/users/AddUsers'
+import EditUser from './companents/users/EditUser'
+import Users from './companents/users/Users'
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/users/add' component={AddUser}/>
+          <Route exact path='/users/edit/:id' component={EditUser}/>
+          <Route exact path='/users/:id' component={Users}/>
+          <Route  component={NotFound}/>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
