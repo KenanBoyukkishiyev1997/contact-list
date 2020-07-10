@@ -2,8 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Nece Acmaq Olar
 1)gitden clone ve ya dowonload zip
+
 2)npm i yeni npm install
+
 3)npm run start:dev elemelisiz npm start elesez bos ekran gorsenecek 
+
 
 
 ## Available Scripts
