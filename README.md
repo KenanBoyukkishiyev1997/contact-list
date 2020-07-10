@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Nece Acmaq Olar
+1)gitden clone ve ya dowonload zip
+2)npm i yeni npm install
+3)npm run start:dev elemelisiz npm start elesez bos ekran gorsenecek 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
